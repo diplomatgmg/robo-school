@@ -20,6 +20,7 @@ body {
   font-family: "Jost Regular", serif;
   color: #fff;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -90,7 +91,7 @@ nav {
 }
 
 .header-content__title {
-  font-size: 70px;
+  font-size: 96px;
   margin: 0;
 }
 
@@ -127,16 +128,12 @@ main {
 }
 
 section {
-  padding: 50px 300px;
+  padding: 50px 650px;
 }
 
 .about-school {
   display: flex;
   flex-direction: column;
-}
-
-.about-school__description {
-  font-size: 30px;
 }
 
 .about-school__name {
@@ -310,7 +307,7 @@ section {
 }
 
 .about-school__description {
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .pricing-card__button {
