@@ -1,0 +1,127 @@
+$font-path: "/fonts"
+
+@font-face
+  src: url("#{$font-path}/Jost-Regular.ttf") format("woff")
+  font-family: "Jost Regular"
+  font-weight: 400
+  font-style: normal
+
+
+@font-face
+  src: url("#{$font-path }/Jost-SemiBold.ttf") format("woff")
+  font-family: "Jost SemiBold"
+  font-weight: 600
+  font-style: normal
+
+
+@font-face
+  src: url("#{$font-path }/Jost-Bold.ttf") format("woff")
+  font-family: "Jost Bold"
+  font-weight: 700
+  font-style: normal
+
+
+body
+  font-family: "Jost Regular", serif
+  color: #fff
+
+
+header
+  margin: 0 50px 2000px
+
+  > *
+    margin: 0
+
+
+nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.header__phone
+  font-family: "Jost SemiBold", serif
+
+
+.header-rectangle
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: -1
+  background: #141024
+  width: 100vw
+  height: 100vh
+
+  display: flex
+  justify-content: center
+
+
+.header-name
+  font-family: "Jost Bold", serif
+
+
+.header-links
+  display: flex
+  padding: 0
+  gap: 50px
+  list-style-type: none
+
+  a
+    text-decoration: none
+    color: #fff
+
+
+.header-content
+  position: relative
+  display: flex
+
+  justify-content: center
+  align-items: center
+
+  margin-top: 50px
+  gap: 200px
+
+
+
+
+.header-content__right
+  display: flex
+  align-self: end
+  text-align: center
+  position: relative
+
+
+
+.header-content__title
+  font-size: 70px
+  margin: 0
+
+
+.header-content__subtitle
+  font-size: 20px
+  margin: 25px 0
+
+
+.header-content__button
+  margin-top: 10px
+  font-size: 20px
+  padding: 20px 30px
+  color: #fff
+  background: red
+
+  border: 0
+  border-radius: 2px
+
+
+
+.header-content__women
+  height: 90vh
+
+
+.header-content__ellipse
+  z-index: -1
+  position: absolute
+  left: 50%
+  top: 55%
+  transform: translate(-50%, -50%)
