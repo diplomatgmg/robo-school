@@ -22,7 +22,8 @@ body {
 }
 
 header {
-  margin: 0 50px 2000px;
+  margin: 0 50px;
+  height: 100vh;
 }
 header > * {
   margin: 0;
@@ -31,7 +32,9 @@ header > * {
 nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
+  z-index: 1;
 }
 
 .header__phone {
@@ -43,7 +46,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
   background: #141024;
   width: 100vw;
   height: 100vh;
@@ -75,6 +77,10 @@ nav {
   gap: 200px;
 }
 
+.header-content__left {
+  z-index: 1;
+}
+
 .header-content__right {
   display: flex;
   align-self: end;
@@ -89,17 +95,18 @@ nav {
 
 .header-content__subtitle {
   font-size: 20px;
-  margin: 25px 0;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .header-content__button {
-  margin-top: 10px;
   font-size: 20px;
   padding: 20px 30px;
   color: #fff;
   background: red;
+  text-decoration: none;
   border: 0;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .header-content__women {
@@ -112,6 +119,48 @@ nav {
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
+}
+
+main {
+  color: black;
+}
+
+section {
+  margin: 50px 300px;
+}
+
+.about-school {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-school__description {
+  font-size: 30px;
+}
+
+.about-school__name {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.about-school__stats {
+  display: flex;
+  margin: 50px 0;
+  gap: 50px;
+}
+
+.about-school__stats__block p:first-child {
+  margin: 0;
+  color: #D52027;
+  font-weight: bold;
+  font-size: 70px;
+  white-space: nowrap;
+}
+.about-school__stats__block p:last-child {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
