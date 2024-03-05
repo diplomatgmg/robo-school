@@ -166,9 +166,9 @@ section {
 .benefits-school {
   display: flex;
   flex-direction: column;
+  background-color: #F9F9F9;
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #F9F9F9;
 }
 
 .benefits-school__title {
