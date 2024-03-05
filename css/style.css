@@ -237,6 +237,7 @@ section {
   color: red;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .pricing-cards {
@@ -253,6 +254,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 75px;
 }
 
 .pricing-card__group {
@@ -317,6 +319,53 @@ section {
   text-align: center;
 }
 
+.discount-section {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #D52027;
+}
+
+.discount-section__text {
+  display: flex;
+  flex-direction: column;
+}
+.discount-section__text p:first-child {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.discount-section__text p:last-child {
+  font-size: 16px;
+  opacity: 70%;
+}
+
+.discount-section__form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.discount-section__form input {
+  border: none;
+  padding: 16px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
+.discount-section__form button {
+  border: 0;
+  padding: 16px;
+  margin: 5px 0;
+  background-color: #141024;
+  color: white;
+  font-family: "Jost Regular", serif;
+  border-radius: 6px;
+}
+
 footer {
   position: absolute;
   justify-content: space-between;
@@ -324,7 +373,6 @@ footer {
   display: flex;
   left: 0;
   right: 0;
-  margin-top: 50px;
   padding: 25px 50px;
   background-color: #141024;
 }
