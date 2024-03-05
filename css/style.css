@@ -166,10 +166,13 @@ section {
 .benefits-school {
   display: flex;
   flex-direction: column;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: #F9F9F9;
 }
 
 .benefits-school__title {
+  margin: 0;
   font-weight: bold;
   font-size: 50px;
 }
@@ -193,6 +196,43 @@ section {
 }
 .benefits-school__group:not(:first-child):not(:last-child) {
   margin: 0 50px;
+}
+
+.trainers-school h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.trainers-school__container {
+  padding-bottom: 40px;
+  overflow-x: scroll;
+  display: flex;
+  gap: 50px;
+}
+.trainers-school__container::-webkit-scrollbar {
+  height: 10px;
+  background: #efefef;
+}
+.trainers-school__container::-webkit-scrollbar-thumb {
+  background: #141024;
+  border-radius: 10px;
+}
+
+.trainers-school__coach-name {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.trainers-school__coach-details {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.trainers-school__coach-about {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
