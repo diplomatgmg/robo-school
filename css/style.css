@@ -126,7 +126,7 @@ main {
 }
 
 section {
-  margin: 50px 300px;
+  padding: 50px 300px;
 }
 
 .about-school {
@@ -152,15 +152,47 @@ section {
   gap: 50px;
 }
 
-.about-school__stats__block p:first-child {
+.about-school__stats__group p:first-child {
   margin: 0;
   color: #D52027;
   font-weight: bold;
   font-size: 70px;
   white-space: nowrap;
 }
-.about-school__stats__block p:last-child {
+.about-school__stats__group p:last-child {
   font-size: 18px;
+}
+
+.benefits-school {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9F9;
+}
+
+.benefits-school__title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.benefits-school__container {
+  display: flex;
+}
+
+.benefits-school__group {
+  display: flex;
+  flex-direction: column;
+}
+.benefits-school__group p:first-child {
+  margin: 12px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+.benefits-school__group p:last-child {
+  margin: 12px 0;
+  font-size: 18px;
+}
+.benefits-school__group:not(:first-child):not(:last-child) {
+  margin: 0 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

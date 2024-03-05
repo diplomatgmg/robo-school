@@ -139,7 +139,7 @@ main
 
 
 section
-  margin: 50px 300px
+  padding: 50px 300px
 
 .about-school
   display: flex
@@ -163,7 +163,7 @@ section
   gap: 50px
 
 
-.about-school__stats__block
+.about-school__stats__group
   p:first-child
     margin: 0
     color: #D52027
@@ -173,3 +173,36 @@ section
 
   p:last-child
     font-size: 18px
+
+
+.benefits-school
+  display: flex
+  flex-direction: column
+  background-color: #F9F9F9
+
+
+.benefits-school__title
+  font-weight: bold
+  font-size: 50px
+
+
+.benefits-school__container
+  display: flex
+
+
+.benefits-school__group
+  display: flex
+  flex-direction: column
+
+
+  p:first-child
+    margin: 12px 0
+    font-weight: bold
+    font-size: 24px
+
+  p:last-child
+    margin: 12px 0
+    font-size: 18px
+
+  &:not(:first-child):not(:last-child)
+    margin: 0 50px
