@@ -1,4 +1,8 @@
+$color2: #141024
+
+
 $font-path: "../fonts"
+
 
 @font-face
   src: url("#{$font-path}/Jost-Regular.ttf") format("woff")
@@ -24,6 +28,7 @@ $font-path: "../fonts"
 body
   font-family: "Jost Regular", serif
   color: #fff
+  margin: 0
 
 
 header
@@ -133,7 +138,7 @@ nav
 
 
 main
-  color: black
+  color: $color2
 
 
 section
@@ -303,7 +308,7 @@ section
     vertical-align: middle
     position: relative
     top: -5px
-    background-color: black
+    background-color: $color2
 
   &:first-child::before, &:first-child::after
     background-color: white
@@ -330,3 +335,32 @@ section
   font-size: 18px
   width: 100%
   text-align: center
+
+
+footer
+  position: absolute
+  justify-content: space-between
+  align-items: start
+  display: flex
+  left: 0
+  right: 0
+  margin-top: 50px
+  padding: 25px 50px
+  background-color: $color2
+
+
+.footer-logo
+  font-weight: bold
+  font-size: 30px
+  margin: 0
+
+
+.footer-copyright
+  font-size: 16px
+  opacity: 50%
+
+
+.footer-contact
+  font-weight: bold
+  font-size: 30px
+  margin: 0
